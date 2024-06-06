@@ -23,8 +23,7 @@ async def start(event):
     """
     user_id = event.sender_id
     buttons = [
-        [Button.url("Owner", url="https://t.me/nano000bot")],
-        [Button.url("Repo", url="https://github.com/nahianmahin/nano-Save-Restricted-Content-Bot-Repo")],
+        [Button.url("Owner", url="https://t.me/nano000bot")],[Button.url("Repo", url="https://github.com/nahianmahin/nano-Save-Restricted-Content-Bot-Repo")],
     ]
     # Sending photo with caption and buttons
     await gagan.send_file(
@@ -38,7 +37,7 @@ def thumbnail(chat_id):
     return f'{chat_id}.jpg' if os.path.exists(f'{chat_id}.jpg') else f'thumb.jpg'
 
 S = "/start"
-START_PIC = "https://tse1.mm.bing.net/th/id/OIG4.biR1wKvVCCQZ4YGF6Wj3?pid=ImgGn"
+START_PIC = "https://telegra.ph/file/f966d633c998c0ecd2b1a.jpg"
 TEXT = "Send me the Link of any message of Restricted Channels to Clone it here.\nFor private channel's messages, send the Invite Link first.\n\n👉🏻 Execute /batch for bulk process upto 10K files range."
 
 @gagan.on(events.NewMessage(func=lambda event: event.photo))
