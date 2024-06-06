@@ -23,7 +23,8 @@ async def start(event):
     """
     user_id = event.sender_id
     buttons = [
-        [Button.url("Owner", url="https://t.me/nano000bot")],[Button.url("Repo", url="https://github.com/nahianmahin/nano-Save-Restricted-Content-Bot-Repo")],
+        [Button.url("Owner", url="https://t.me/nano000bot"),
+          Button.url("Repo", url="https://github.com/nahianmahin/nano-Save-Restricted-Content-Bot-Repo")],
     ]
     # Sending photo with caption and buttons
     await gagan.send_file(
